@@ -1,0 +1,127 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 15, 2018, 2:11:26 AM
+    Author     : benfi
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+#search {
+    margin-bottom: 20px;
+    height: 30px;
+    width: 40%;
+    font-size: 15px;
+}
+#admin {
+    width: 100%;
+    /*	height: 500px;*/
+    background-color:rgba(255,255,255,0.79);
+    margin-bottom: 50px;
+    height: auto;
+}
+
+.form-login {
+    /*
+            align-items: center;
+            text-align: center;
+    */
+    /*	padding: 5% 50%;*/
+    padding-bottom: 150px;
+
+}
+
+.wrap-form {
+    padding-top: 50px;
+    /*	padding-left: 35%;*/
+}
+a.click {
+    text-decoration: none!important;
+    color: black;
+    cursor: pointer;
+}
+a.click :hover{
+    color: #ddd;
+}
+.form-login a{
+    color: black;
+    cursor: pointer;
+}
+.form-login a:hover{
+    color:darkgray;
+}
+.button-form {
+    border: none;
+    height: 40px;
+    width: 130px;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+    /*margin-left: 29.7%;*/
+}
+.button-form:hover{
+    cursor: pointer;
+}
+
+.userLeftContent{
+    width: 80%;margin: 0 10% 0 10%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.productRightContent{
+    width: 80%;margin: 0 10% 0 10%;
+    border: 2px solid black;
+    border-radius: 5px;
+}            
+table, th, td {
+    border-collapse: collapse;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t01 th {
+    background-color: black;
+    color: #eee;
+}
+table#t01 td {
+    padding: 10px;
+    text-align: left;
+}
+table#t01 th {
+    padding: 10px;
+    text-align: left;
+}
+a.delete {
+    text-decoration: none!important;
+    color:brown!important;
+}
+a.delete :hover ,a.delete:active{
+    color: coral!important;
+}
+table#t02 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t02 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t02 th {
+    background-color: black;
+    color: #eee;
+}
+table#t02 td {
+    padding: 10px;
+    text-align: left;
+}
+table#t02 th {
+    padding: 10px;
+    text-align: left;
+}

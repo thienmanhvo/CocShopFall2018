@@ -1,0 +1,25 @@
+/* Scss Document */
+
+
+#commitment {
+	height: auto;
+	width: 100%;
+	background-color: rgba(255,255,255,0.80);
+	margin-bottom: 50px;
+}
+
+#wrap-commitment {
+	padding-top: 50px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 50px;
+}
+#wrap-commitment p a {
+	text-decoration: none;
+	color:brown;
+}
+
+#wrap-commitment p a:hover {
+	color: coral;
+}
+

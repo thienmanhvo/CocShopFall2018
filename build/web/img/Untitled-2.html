@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<body >
+
+<div class="w3-container">
+  <h2>Slideshow Indicators</h2>
+  <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides w3-animate-fading"  src="5a7acfff7db1e.jpg" style="width:100%"  >
+  <img class="mySlides w3-animate-fading" src="5617089rg_unicorn_gundam__4.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="bf16b99c54b59208cbe2d477aa8f78fa.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusSlides(-1)"  >&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusSlides(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentSlide(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentSlide(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+<script>
+//var slideIndex = 1;
+//showDivs(slideIndex);
+//
+//function plusDivs(n) {
+//  showDivs(slideIndex += n);
+//}
+//
+//function currentDiv(n) {
+//  showDivs(slideIndex = n);
+//}
+//
+//function showDivs(n) {
+//  var i;
+//  var x = document.getElementsByClassName("mySlides");
+//  var dots = document.getElementsByClassName("demo");
+//  if (n > x.length) {slideIndex = 1}    
+//  if (n < 1) {slideIndex = x.length}
+//  for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
+//  }
+//  for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" w3-white", "");
+//  }
+//  x[slideIndex-1].style.display = "block";  
+//  dots[slideIndex-1].className += " w3-white";
+//}
+////$(document).ready(function(){
+////    $("#in").mouseover(function(){
+////        $("#aa").fadeIn();
+////    });
+////	$("#in").mouseout(function(){
+////        $("#aa").fadeOut();
+////    });
+////});
+	'use strict';
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  //alert('showslides('+ n +')\nslideIndex='+slideIndex);
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n==undefined){n = ++slideIndex}
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += "  w3-white";
+  
+  setTimeout(showSlides, 10000); // Change image every 5 seconds
+}
+</script>
+
+</body>
+</html> 

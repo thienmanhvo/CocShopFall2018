@@ -1,0 +1,821 @@
+@charset "utf-8";
+/* Global Styles */
+	.bodya {
+    padding:0;
+    margin:0;
+	overflow:hidden;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+		
+    
+}
+
+#button-to-top{
+	font-size: 30px;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	padding-top: 7px;
+	border-radius: 10px;
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	background-color: darkorange;
+	display: none;
+	transition: width 2s, height 2s, transform 2s;
+	padding-bottom: 20px;
+}
+#button-to-top:hover {
+  background-color: #555;
+	color: lightgray;
+	transform: rotate(360deg);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.animate-top-logo{position:relative;animation:animatetop 2s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.animate-bottom{position:relative;animation:animatebottom 0.8s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.animate-bottom-offer{position:relative;animation:animatebottom 1.6s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.animate-top{position:relative;animation:animatetop 0.8s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.animate-zoom {animation:animatezoom 2s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.animate-left{position:relative;animation:animateleft 0.8s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-right{position:relative;animation:animateright 0.8s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-fading{animation:fading 9s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.animate-opacity{animation:opac 3s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.spin{animation:w3-spin 2s infinite linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+	canvas {
+    padding:0;
+    margin:0;
+    opacity:0.25;
+}
+	div.btnbg {
+    position:fixed;
+    left:0;
+    top:0;
+
+}
+		.aa{
+	z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 0px;			
+		}
+/*.bg{
+	background-image: url(../../img/146038-best-gundam-iron-blooded-orphans-wallpaper-1920x1080-for-lockscreen.jpg);
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+	background-size: cover;
+	background-position: center center
+	
+}*/
+.bg{
+	background-image: url(../../img/146038-best-gundam-iron-blooded-orphans-wallpaper-1920x1080-for-lockscreen.jpg);
+	z-index: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+	background-size: cover;
+	background-position: center center;
+}
+a:hover {
+	color: rgba(255,255,255,1.00);
+}
+/*header*/
+.header {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+}
+/* Logo placeholder*/
+#logo {
+	float: left;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 260px;
+	height: 100px;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	background-color: rgba(0,0,0,0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* div for Links in header */
+#headerLinks {
+	float: right;
+	width: calc( 100% - 270px );
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(255,255,255,1.00);
+	height: 80px;
+}
+.headheader{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+#headerLinks form input[type=text] {
+	width: 70%;
+	border-radius: 0px;
+	height: 22px;
+	text-align: center;
+	color: #B3B3B3;
+	font-size: 14px;
+	float: right;
+	border: 2px solid grey;
+	
+}
+::placeholder {
+    color: #B3B3B3;
+    opacity: 1; /* Firefox */
+	font-size: 14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #B3B3B3;
+	font-size: 14px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #B3B3B3;
+	font-size: 14px;
+}
+#headerLinks form button {
+    float: right;
+    width: 10%;
+	height: 28px;
+    padding: 0px;
+    background: #ffffff;
+    color: #B3B3B3;
+    font-size: 11px;
+    border: 2px solid grey;
+    border-left: none;
+    cursor: pointer;
+	
+}
+.formhead{
+	width: 700px;
+	height: 25px;
+}
+#headerLinks form{
+
+	width: 70%;
+	
+}
+#headerLinks form button:hover {
+    color: #8E8E8E;
+}
+
+#headerLinks form::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Links in header */
+#headerLinks a{
+	margin-top: 4px;
+	text-decoration: none;
+	color: rgba(146,146,146,1.00);
+	padding-left: 0px;
+	font-size: 13px;
+	padding-right:20px;
+	flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 10px;
+}
+
+
+#headerLinks a:hover{
+	color:dimgrey;
+}
+#nav-top{
+	width: 100%;
+	height: 90px;
+	clear: both;
+	z-index: 1;
+	
+}
+#nav-top nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#nav-top nav ul li{
+	float: left;
+}
+#nav-top nav ul li a{
+	    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#nav-top nav ul li a:hover{
+	background-color: #111;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+	width: 100%;
+	margin-left: -7.7%;
+}
+.sticky + #offer {
+  padding-top: 150px;
+	max-height: 500px;
+}
+.active-a {
+    background-color: #4CAF50;
+}
+/* Offer text banner*/
+#offer {
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgba(246,246,246,1.00);
+	color: rgba(146,146,146,1.00);
+	padding-top: 57px;
+	padding-bottom: 57px;
+	height: 500px;
+	clear: both;
+	
+}
+.display-item{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+/*
+#right-offer{
+	float: right;
+}
+*/
+
+
+/*
+.offerContent{
+		width:980px;
+		margin:auto;
+		height: 500px;
+}
+*/
+
+#myslideFrame img {
+	height: 500px;
+}
+.offer-badge,.offer-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.offer-badge{border-radius:50%}
+.offer-border{border:1px solid #ccc!important}
+.offer-transparent,.offer-hover-none:hover{background-color:transparent!important}
+.offer-white,.offer-hover-white:hover{color:#000!important;background-color:#fff!important}
+.offer-display-container{position:relative}
+.mySlides {width: 100%;} /**/
+.mySlides {display: none; vertical-align: middle; }
+#myslideFrame{
+	font-size:0; 
+	position:relative;
+/*	width:70%;*/
+	width:1200px;
+	margin:auto;
+	height: 500px;
+	margin-left: 5%;
+}
+#myslideFrame:before, 
+.offer-left, .offer-right, .offer-badge {cursor:pointer}
+.offer-badge {
+	height:13px;
+	width:13px;
+	padding:0
+}
+
+.offer-border-red{border-color:#f44336!important}
+
+.offer-select{
+	position:absolute;
+	color:#fff;
+	font-size:18px;
+	text-align: center!important;
+	
+	margin-top: -60px;
+}
+.menu-offer{
+	margin-left: 50px;
+	width: 350px;
+/*	border: 1px solid #9B9B9B;*/
+	height: 350px;
+}
+/* Main content of the site */
+#content {
+	clear: both;
+	overflow: auto;
+	padding-top: 0px;
+}
+/* Sidebar */
+#content .sidebar {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	float: left;
+/*	width: 20%;*/
+	width: 350px;
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: center;
+	background-color: rgba(246,246,246,1.00);
+	padding-top: 36px;
+	height: 784px;
+}
+.center{
+	text-align: center;
+}
+/*
+.mySlidesProduct img {
+	height: 500px;
+	width: 350px;
+}
+*/
+/*
+.mySlidesProduct{
+	display: none; 
+	vertical-align: middle; 
+	width: 100%;
+}
+#myslideFrameProduct{
+	font-size:0; 
+	position:relative;
+	width:350px;
+	margin:auto;
+	height: 500px;
+}
+*/
+/* main content of the site */
+#content .mainContent {
+	float: left;
+	width: 70%;
+	text-align: center;
+	padding-left: 4%;
+}
+/* Intro */
+#content .intro{
+	padding-top: 50px;
+	margin-bottom: 50px;
+	width: 70%;
+	height: 600px;
+	background-color: white;
+	margin-top: 50px;
+	float: right;
+}
+#content .intro .innerIntro{
+	width: 100%;
+	height: 600px;
+	background-image:  linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,1)),url(../../img/bf16b99c54b59208cbe2d477aa8f78fa.jpg);
+	background-repeat: no-repeat;
+	align-items: stretch;
+	background-size: cover;
+	background-position:top;
+	
+
+}
+#content .intro .innerIntro .inner2 a{
+	color: white;
+	text-decoration:none;
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-end;
+	text-align: center;
+	
+}
+#content .intro .innerIntro .inner2 a:hover{
+	text-shadow: 2px 2px 1px white;
+}
+
+.inner2{
+	width: 100%;
+	height: 280px;
+	display: flex;
+	justify-content:center;
+	align-items: stretch;
+}
+.leftintro{
+	margin-top: 14px;
+	background-image: url(../../img/far-left.png);
+	height: 250px;
+	width: 170px;
+	background-repeat: no-repeat;
+	margin-right: 20px; 
+	border-bottom: solid 3px #ff9900;
+}
+
+
+.leftintronear{
+	margin-top: 30px;
+	background-image: url(../../img/near-left.png);
+	height: 236px;
+	width: 170px;
+	background-repeat: no-repeat;
+	border-bottom: solid 3px #ff9900;
+}
+.rightintro{
+	margin-top: 15px;
+	background-image: url(../../img/far-right.png);
+	height: 250px;
+	width: 170px;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	border-bottom: solid 3px #ff9900;
+}
+.rightintronear{
+	margin-top: 30px;
+	background-image: url(../../img/near-right.png);
+	height: 237px;
+	width: 170px;
+	background-repeat: no-repeat;
+	border-bottom: solid 3px #ff9900;
+}
+.midintro{
+	margin-top: 27px;
+	width: 500px;
+	height: 250px;
+	text-align: center;
+}
+.footerIntro{
+	display: flex;
+}
+.footerIntrop{
+	width: 35%;
+	margin-left: 15%;
+	text-align: justify;
+	margin-right: 100px;
+}
+.footerIntroul{
+	width: 35%;
+	margin-right: 15%;
+	
+}
+.footerIntroul ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerIntroul ul li{
+	padding-left: 1em; 
+  text-indent: -.7em;
+}
+.footerIntroul ul li::before {
+  content: "❖ ";
+  color: #ff9900; /* or whatever color you prefer */
+}
+/*menubar's properties for menus in sidebar */
+#content .sidebar #menubar {
+	text-align: left;
+	color: rgba(146,146,146,1.00);
+	position: relative;
+	left: 0%;
+	display: block;
+}
+/* Search field in sidebar */
+
+/* Whole page content */
+#mainWrapper {
+	width: 85%;
+	margin-left:7.5%;
+	margin-right: 7.5%;
+}
+/*menu elements */
+.menu ul li {
+	list-style-type: none;
+	font-size: x-large;
+	position: relative;
+	left: -35px;
+	padding-top: 12px;
+}
+.top-product{
+	background-color: azure;
+	margin-top: -23px;
+	height:60px;
+}
+/* Product rows for catalog */
+#content .mainContent .productRow {
+	overflow: auto;
+	color: rgba(146,146,146,1.00);
+}
+/* Each product Information in the catalog */
+.mainContent .productRow .productInfo {
+	float: left;
+	padding-left: 5%;
+/*	padding-right: 5%;*/
+/*	width: 22%;*/
+}
+/* Prices of a products in catalog */
+.productRow .productInfo .price {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 22px;
+	position: relative;
+	top: -20px;
+}
+/* Content holder for products in catalog*/
+.productRow .productInfo .productContent {
+	position: relative;
+	top: -37px;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: rgba(146,146,146,1.00);
+	white-space: pre-wrap;
+}
+.font{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; 
+}
+
+/* Buy button for products in catalog */
+.productRow .productInfo .buyButton {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	background-color: rgba(208,207,207,1.00);
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+/* footer */
+#mainWrapper footer {
+	clear: both;
+	overflow: auto;
+	background-color: rgba(208,207,207,1.00);
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
+}
+/*Each footer content */
+#mainWrapper footer div {
+	width: 27%;
+	float: left;
+	padding-left: 4%;
+	padding-right: 2%;
+	color: rgba(255,255,255,1.00);
+	text-align: justify;
+	
+}
+/* Links in footer */
+footer div a {
+	color: rgba(146,146,146,1.00);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+/* Product's images in catalog */
+.productInfo div img {
+	width: 100%;
+}
+/*Links in sidebar */
+.sidebar #menubar .menu ul li a {
+	color: rgba(146,146,146,1.00);
+	text-decoration: none;
+}
+.sidebar #menubar .menu ul li a:hover {
+	color: rgba(107,97,97,1.00);
+	text-decoration: none;
+}
+/* Menu headings in sidebar */
+#menubar .menu h2 {
+	font-size: 14px;
+}
+/*Links under menus in sidebar */
+#menubar .menu ul li a {
+	font-size: 14px;
+}
+/* Menus in sidebar */
+.sidebar #menubar .menu {
+	margin-bottom: 29px;
+	border: 1px solid #9B9B9B;
+}
+/* Container for links in footer */
+footer .footerlinks {
+	margin-top: -15px;
+}
+
+/* Media query for tablets */
+@media screen and (max-width:700px) {
+/* search field in sidebar */
+#headerLinks form {
+	display: none;
+}
+/* sidebar */
+#content .sidebar {
+	float: none;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	padding-left: 12%;
+	padding-top: 0px;
+}
+/* horizontal separators in sidebar */
+#content .sidebar hr {
+	display: none;
+}
+/*The sidebar and maincontent of page */
+#content {
+	position: relative;
+	top: -22px;
+	width: 100%;
+	overflow: hidden;
+}
+/*menu headings in sidebar */
+#menubar .menu h2 {
+	display: inline;
+	font-size: medium;
+	padding-right: 6%;
+}
+/* Unordered List of links */
+#menubar .menu ul {
+	display: inline;
+}
+/*list elements */
+#menubar .menu ul li {
+	display: inline;
+	font-size: medium;
+	padding-left: 0%;
+	padding-right: 3%;
+}
+/*The link to be hidden in tablet view */
+.sidebar #menubar .menu ul .notimp {
+	display: none;
+}
+/* menus in sidebar */
+.sidebar #menubar .menu {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 16px;
+}
+/*menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -7%;
+	overflow: hidden;
+	width: 95%;
+	padding-top: 0px;
+}
+/* offer banners content */
+#mainWrapper #offer p {
+	font-size: small;
+}
+/* main content region of page */
+#mainWrapper #content .mainContent {
+	overflow: hidden;
+	width: 95%;
+	margin-top: 40px;
+}
+/* Prices of products in catalog view */
+.productRow .productInfo .price {
+	font-size: 19px;
+}
+/* Content holders in catalog view */
+.productRow .productInfo .productContent {
+	font-size: 16px;
+}
+/* Buy buttons in catalog view */
+.productRow .productInfo .buyButton {
+	font-size: 15px;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	float: none;
+	width: 100%;
+	position: relative;
+	top: 17px;
+	clear: both;
+	text-align: center;
+	left: 0%;
+	padding-bottom: 19px;
+}
+/* Container for each footer divisions */
+#mainWrapper footer div {
+	width: 44%;
+	text-align: justify;
+	font-size: 15px;
+}
+/* Links in footer */
+.footerlinks p a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: inline;
+	padding-right: 35px;
+}
+/* Footer region */
+#mainWrapper footer {
+	padding-left: 16px;
+	overflow: hidden;
+}
+/* Links in header */
+header #headerLinks a {
+	padding-left: 0px;
+	padding-right: 30px;
+}
+/* Offer- Text banner */
+#mainWrapper #offer {
+	padding-left: 22%;
+}
+/* Paragraphs in footer */
+footer .footerlinks p {
+	display: inline;
+	
+}
+}
+
+/*media query for small screen devices */
+@media screen and (max-width:480px) {
+/*Container for links in header */
+#mainWrapper header #headerLinks {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(190,190,190,1.00);
+	padding-bottom: 21px;
+	justify-content:center;
+	 
+}
+	
+/* Logo placeholder*/
+#mainWrapper header #logo {
+	width: 100%;
+	text-align: center;
+}
+/* Links in header */
+header #headerLinks a {
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 0px;
+}
+/*Offer - Text Banner */
+#mainWrapper #offer {
+	padding-left: 0px;
+	text-align: center;
+}
+/* Menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -8%;
+	text-align: center;
+}
+/*Menu headings in sidebar */
+#menubar .menu h2 {
+	width: 100%;
+	display: block;
+}
+/* Each product in catalog view */
+.mainContent .productRow .productInfo {
+	width: 100%;
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	left: -2%;
+}
+#mainWrapper footer div {
+	width: 100%;
+	margin-left: -16px;
+	text-align: justify;
+	padding-bottom: 16px;
+	overflow: auto;
+}
+/* Unordered list for menu elements */
+.menu ul {
+	position: relative;
+	padding-left: 24%;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	padding-left: 8%;
+}
+/* Main content which excludes the sidebar */
+#mainwrapper #content .mainContent {
+	margin-top: -81px;
+	text-align: center;
+	width: 100%;
+	padding-left: 0px;
+}
+}
+.butto-top {
+}
+
+.product {
+	padding: 0px 20px;
+}

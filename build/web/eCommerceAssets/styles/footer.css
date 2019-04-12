@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+footer .footerlinks {
+	margin-top: -15px;
+}
+#mainWrapper footer {
+	clear: both;
+	overflow: auto;
+	background-color: #333;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
+}
+/*Each footer content */
+#mainWrapper footer div {
+	width: 27%;
+	float: left;
+	padding-left: 4%;
+	padding-right: 2%;
+	color: rgba(255,255,255,1.00);
+	text-align: justify;
+	
+}
+/* Links in footer */
+footer div a {
+	color: rgba(146,146,146,1.00);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+	
+	
+	
+	
+	
+	
+.face {
+	padding: 5px;
+}

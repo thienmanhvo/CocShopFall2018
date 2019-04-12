@@ -1,0 +1,161 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default" namespace="/">
+        <action name="LoginAction" class="thiennb.action.LoginAction">
+            <result name="admin" type="redirectAction">
+                <param name="actionName">AccessAdminAction</param> 
+            </result>
+            <result name="user">index.jsp</result>
+            <result name="error">error.jsp</result>   
+            <result name="input">login.jsp</result> 
+        </action>
+        <action name ="RegistrationAction" class="thiennb.action.RegistrationAction">
+            <result name ="success">register.jsp</result>
+            <result name = "error">register.jsp</result>
+            <result name="input">register.jsp</result> 
+        </action>
+        <action name ="SearchProductAction" class="thiennb.action.SearchProductAction">
+            <result name="input">/WEB-INF/search.jsp</result>
+            <result name="success">/WEB-INF/search.jsp</result>
+            
+        </action>
+        <action name ="ChangeInfoAction" class ="thiennb.action.ChangeInfoAction">
+            <result name="input">/WEB-INF/myaccount.jsp</result>
+            <result name="success">/WEB-INF/myaccount.jsp</result>
+            <result name="error">/WEB-INF/myaccount.jsp</result>
+        </action>
+        <action name ="AccessUpdateAction" class ="thiennb.action.AccessUpdateAction">
+            <result name="input">error.jsp</result>
+            <result name="success">/WEB-INF/myaccount.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name ="ChangePasswordAction" class ="thiennb.action.ChangePasswordAction">
+            <result name="input">/WEB-INF/myaccount.jsp</result>
+            <result name="success">/WEB-INF/passwordsuccess.jsp</result>
+            <result name="error">/WEB-INF/myaccount.jsp</result>
+        </action>
+        <action name ="LogoutAction" class ="thiennb.action.LogoutAction">
+            <result name="input">/WEB-INF/demo1.3.jsp</result>
+            <result name="success">index.jsp</result>
+            <result name="error">/WEB-INF/demo1.3.jsp</result>
+        </action>
+        <action name ="LoadProductAction" class ="thiennb.action.LoadProductAction">
+            <result name="admin">admin.jsp</result>
+            <result name="success">/WEB-INF/demo1.3.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name ="AccessAdminAction" class ="thiennb.action.AccessAdminAction">
+            <result name="success">admin.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="input">admin.jsp</result>
+        </action>
+        <action name ="SearchUserAction" class ="thiennb.action.SearchUserAction">
+            <result name="success">admin.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="input">admin.jsp</result>
+        </action>
+        <action name="DeleteUserAction" class="thiennb.action.DeleteUserAction">
+            <result type="redirectAction">
+                <param name="selectedSearchUserType">${findWhat}</param>
+                <param name="actionName">SearchUserAction</param>
+                <param name="userSearch">${lastSearchUserValue}</param>
+            </result>
+        </action>
+        <action name="EditUserAction" class ="thiennb.action.EditUserAction">
+            <result name="success">/WEB-INF/edituser.jsp</result>
+        </action>
+        <action name ="UpdateUserInfoAction" class="thiennb.action.UpdateUserInfoAction">
+            <result name="success" type="redirectAction">
+                <param name="actionName">
+                    SearchUserAction
+                </param>
+                <param name="selectedSearchUserType">
+                    ${findWhat}
+                </param>
+                <param name="userSearch">${lastSearchUserValue}</param>
+            </result>
+            <result name="error" type="redirectAction">
+                <param name="actionName">
+                    SearchUserAction
+                </param>
+                <param name="selectedSearchUserType">
+                    ${findWhat}
+                </param>
+                <param name="userSearch">${lastSearchUserValue}</param>
+            </result>
+            <result name="input" >/WEB-INF/edituser.jsp</result>
+                
+        </action>
+        <action name="SearchProductActionByAdmin" class="thiennb.action.SearchProductActionByAdmin">
+            <result name="success">admin.jsp</result>
+            <result name="input">admin.jsp</result>
+        </action>
+        
+        <action name="DeleteProductAction" class="thiennb.action.DeleteProductAction">
+            <result type="redirectAction">
+                <param name="actionName">SearchProductActionByAdmin</param>
+                <param name="productSearch">${lastSearchProductValue}</param>
+            </result>
+                
+        </action>
+        <action name="EditProdctAction" class ="thiennb.action.EditProdctAction">
+            <result name="success">/WEB-INF/editproduct.jsp</result>
+        </action>
+        
+        <action name ="UpdateProductInfoAction" class="thiennb.action.UpdateProductInfoAction">
+            <result name="success" type="redirectAction">
+                <param name="actionName">
+                    SearchProductActionByAdmin
+                </param>
+                <param name="productSearch">${lastSearchProductValue}</param>
+            </result>
+            <result name="error" type="redirectAction">
+                <param name="actionName">
+                    SearchProductActionByAdmin
+                </param>
+                <param name="productSearch">${lastSearchProductValue}</param>
+            </result>
+            <result name="input">/WEB-INF/editproduct.jsp</result>
+                
+        </action>
+        <action name="AccessInsertProduct" class="thiennb.action.AccessInsertProduct">
+            <result name="success">/WEB-INF/insertprod.jsp</result>
+        </action>
+        <action name="InsertProductAction" class="thiennb.action.InsertProductAction">
+            <result name="success">/WEB-INF/insertprod.jsp</result>
+            <result name="input">/WEB-INF/insertprod.jsp</result>
+            <result name="error">/WEB-INF/insertprod.jsp</result>
+        </action>
+        <action name="AddProductToCartAction" class="thiennb.action.AddProductToCartAction">
+            <result name="success">index.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="ViewCartAction" class="thiennb.action.ViewCartAction">
+            <result name="success">/WEB-INF/viewcart.jsp</result>
+            <result name="error" >error.jsp</result>
+        </action>
+        <action name="RemoveProductFromCart" class="thiennb.action.RemoveProductFromCart">
+            <result name="success" type="redirectAction">
+                <param name="actionName">ViewCartAction</param>
+            </result>
+        </action>
+        <action name="AddProductToCartInSearch" class="thiennb.action.AddProductToCartInSearch">
+            <result name="success" type="redirectAction">
+                <param name="proDSearch">${lastSearch}</param>
+                <param name="actionName">SearchProductAction</param>
+            </result>
+        </action>
+        
+        <action name="CheckOutAction" class="thiennb.action.CheckOutAction">
+            
+            <result name="success">/WEB-INF/checkoutsuccess.jsp</result>
+            
+            <result name="error">error.jsp</result>
+        </action>
+    </package>
+
+</struts>

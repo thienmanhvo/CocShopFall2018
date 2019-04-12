@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#distinction {
+	width: 100%;
+	height: auto;
+/*	 visibility: hidden;*/
+    overflow: scroll;
+	background-color: rgba(255,255,255,0.80);
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+
+.wrap-distinction {
+	padding-top: 50px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.note {
+	padding-left: 16%
+}
+
+.wrap-distinction img {
+	margin-left: 25%;
+}
+
+.wrap-distinction p a {
+	text-decoration: none;
+	color:brown;
+}
+
+.wrap-distinction p a:hover {
+	color: coral;
+}

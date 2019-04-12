@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.register {
+    background-color: rgba(255,255,255,0.81);
+    padding-bottom: 150px;
+    margin-bottom: 40px;
+}
+
+.wrap-register {
+    padding-top: 50px;
+    padding-left: 0%;
+}
+
+#ho {
+    margin: 5px;
+    width: 40%;
+    height: 32px;
+    font-size: 15px;
+}
+#user {
+    margin: 5px;
+    width: 40%;
+    height: 32px;
+    font-size: 15px;
+}
+#ten {
+    margin: 5px;
+    width: 40%;
+    height: 32px;
+    font-size: 15px;
+}
+
+#email {
+    margin: 5px;
+    width: 40%;
+    height: 32px;
+    font-size: 15px;
+}
+
+#matkhau {
+    margin: 5px;
+    width: 40%;
+    height: 32px;
+    font-size: 15px;
+}
+
+.button-form {
+    float: left;
+    margin-left: 29.7%;
+    border: none;
+    height: 40px;
+    width: 130px;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button-form:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.register p a {
+    text-decoration: none;
+    color:brown;
+}
+
+.register p a:hover {
+    color: coral;
+}
+#outputBlank,#outputEmail,#outputPass,#outputPassRe,#outputLastName,#outputName,#outputFailed {
+    color: red;
+    text-align: left;
+    margin-left: 29.7%;
+}
+#success{
+    color: green;
+    text-align: left;
+    margin-left: 29.7%;
+}
+#matkhauRe {
+    margin: 5px;
+    width: 40%;
+    height: 32px;
+    font-size: 15px;
+}

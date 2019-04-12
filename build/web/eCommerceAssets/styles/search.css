@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 13, 2018, 10:02:14 PM
+    Author     : benfi
+*/
+.wrap-search{
+/*    background-color: #3884ab;*/
+    width: 100%;
+}
+.search {
+    background-color: rgba(255,255,255,0.81);
+    padding-bottom: 150px;
+    margin-bottom: 40px;
+}
+
+.search p a {
+    text-decoration: none;
+    color:brown;
+}
+
+.search p a:hover {
+    color: coral;
+}

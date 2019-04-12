@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 16, 2018, 4:10:21 AM
+    Author     : benfi
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 13, 2018, 2:16:52 AM
+    Author     : benfi
+*/
+
+@charset "utf-8";
+
+.textFieldChangePass{
+    margin: 2% 10% 2% 10%;
+    width: 80%;
+    height: 32px;
+    font-size: 15px;
+}
+.register {
+    background-color: rgba(255,255,255,0.81);
+    padding-bottom: 150px;
+    margin-bottom: 40px;
+}
+
+.wrap-register {
+    display: flex;
+    padding-top: 5px;
+    padding-left: 0%;
+}
+
+
+.button-form {
+
+    border: none;
+    height: 40px;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.left-detail{
+    width:40%;
+    float: left;
+    margin-left: 5%;
+    background-color: #ffffff;
+    height: 100%;
+    padding-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.right-detail{
+    width: 70%;
+    float: left;
+    background-color: #ffffff;
+    margin: 0 15% 0 15%;
+    height: 100%;
+    padding-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button-change-pass {
+    margin-left: 10%;
+    float: left;
+    border: none;
+    height: 40px;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button-form:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.register p a {
+    text-decoration: none;
+    color:brown;
+}
+
+.register p a:hover {
+    color: coral;
+}
+#outputBlank,#outputEmail,#outputPass,#outputPassRe,#outputLastName,#outputName,#outputFailed,#outputUsername{
+    color: red;
+    text-align: left;
+}
+#outputCity,#outputPhone,#outputAddress {
+    color: red;
+    text-align: left;
+}
+
